@@ -117,6 +117,14 @@ const CardStyle = styled.div`
     }
   }
   /* btn styles ended */
+
+  /* media query */
+  @media (min-width: 0) and (max-width: 699.9px) {
+    width: 300px;
+  }
+  @media (min-width: 700px) and (max-width: 1000px) {
+    width: 310px;
+  }
 `;
 
 export default Card;

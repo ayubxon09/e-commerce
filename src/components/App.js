@@ -45,6 +45,17 @@ const AppStyles = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  @media (min-width: 0) and (max-width: 699.9px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 700px) and (max-width: 1099.9px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1100px) and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export default App;
